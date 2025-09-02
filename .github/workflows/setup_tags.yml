@@ -1,4 +1,4 @@
-name: Setup PR for code review
+name: Setup PR labels
 
 on:
   pull_request_target:
