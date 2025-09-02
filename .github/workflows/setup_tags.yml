@@ -52,33 +52,5 @@ jobs:
        with:
         labels: |
            ${{ env.LABEL }}
+           ${{ env.GROUP }}
            In progress
-          
-     - name: Setting reviewer 
-       if:  env.GROUP == '6211'
-       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-       with:
-          reviewers: ""
-          token: ${{ secrets.TOKEN }}
-          
-     - name: Setting reviewer
-       if: env.GROUP == '6212' 
-       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-       with:
-          reviewers: "" 
-          token: ${{ secrets.TOKEN }}
-          
-     - name: Setting reviewer
-       if: env.GROUP == '6213' 
-       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-       with:
-          reviewers: "AvtoBBus" 
-          token: ${{ secrets.TOKEN }}
-                    
-     - name: Setting reviewer
-       if: env.GROUP == '6214' 
-       uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-       with:
-          reviewers: "AvtoBBus" 
-          token: ${{ secrets.TOKEN }}
-          
